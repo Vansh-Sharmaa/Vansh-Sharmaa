@@ -1,0 +1,54 @@
+name: Update Profile README
+
+on:
+  schedule:
+    # Run daily at 9 AM IST (3:30 UTC)
+    - cron: '30 3 * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/update-readme.yml'
+
+jobs:
+  update-readme:
+    name: Update README with latest stats
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests github-readme-stats
+
+      - name: Update README stats
+        run: |
+          python -c "
+          import requests
+          import re
+          
+          # Read current README
+          with open('README.md', 'r') as f:
+              content = f.read()
+          
+          # The stats are fetched dynamically via shields.io badges
+          # No update needed - badges auto-refresh
+          print('README stats are dynamic (shields.io) - no update needed')
+          "
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --staged --quiet || git commit -m "chore: update profile README stats"
+          git push
