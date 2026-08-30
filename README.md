@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Vansh Sharma
+# 👋 Hi, I'm Vansh 
 
 **AI/ML Engineer | NLP | Generative AI | LLMs**  
 Building practical AI systems that solve real problems.
@@ -43,13 +43,6 @@ Building practical AI systems that solve real problems.
 
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Vansh-Sharmaa&theme=tokyonight&hide_border=true)
 
----
-
-## 🏆 Achievements
-
-![Trophy](https://github-profile-trophy.vercel.app/?username=Vansh-Sharmaa&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4)
-
----
 
 ## 📈 Contribution Graph
 
@@ -71,21 +64,3 @@ Building practical AI systems that solve real problems.
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/vnxsh)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Vansh-Sharmaa)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:engagevansh@gmail.com)
-[![Hugging Face](https://img.shields.io/badge/🤗_Hugging_Face-FFD21E?style=for-the-badge)](https://huggingface.co/Vansh-Sharmaa)
-
----
-
-## 💡 Fun Facts
-
-- 🎓 **MCA in AI & Data Science** (CGPA 8.0)
-- 🤖 Built **4-agent autonomous research system** from scratch
-- ⚖️ Created **legal AI platform** with RAG + risk assessment
-- 💼 Fine-tuned **Llama-3.2-3B** for job extraction (95%+ accuracy)
-- 🎬 Built **end-to-end ML web apps** deployed on Streamlit/HF Spaces
-- 📝 Love writing **clean, documented, production-ready code**
-
----
-
-> *"The best way to predict the future is to build it."* — Alan Kay
-
-⭐ **Star my repos if you find them useful!** ⭐
