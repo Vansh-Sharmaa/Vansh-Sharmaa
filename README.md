@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Vansh 
+# 👋 Hi, I'm Vansh Sharma
 
 **AI/ML Engineer | NLP | Generative AI | LLMs**  
 Building practical AI systems that solve real problems.
