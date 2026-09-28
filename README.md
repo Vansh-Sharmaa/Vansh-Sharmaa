@@ -50,6 +50,19 @@ Building practical AI systems that solve real problems.
 
 ---
 
+## 🧠 Continuous Learning & Knowledge Hub
+
+I actively maintain a structured knowledge base and daily engineering log tracking practical implementations and system architectures:
+
+- 🤖 **[Multi-Agent Architectures](./knowledge-hub/multi-agent-systems.md)** — LangGraph state graphs, supervisory routing, reflection loops.
+- 🔬 **[LLM Fine-Tuning Playbook](./knowledge-hub/llm-finetuning-qlora.md)** — Math and code for LoRA, QLoRA, and NF4 quantization.
+- 📚 **[Production RAG Patterns](./knowledge-hub/production-rag-patterns.md)** — Hybrid search (BM25 + Dense) and Reciprocal Rank Fusion.
+- ⚡ **[MLOps Model Registry](./knowledge-hub/mlops-model-registry.md)** — Experiment tracking and signature governance with MLflow.
+- 🐍 **[High-Performance Python](./knowledge-hub/python-performance-concurrency.md)** — Zero-copy `memoryview`, `__slots__`, and async pipelines.
+- 📅 **[Daily Learning Journal](./knowledge-hub/daily-journal/README.md)** — Daily problem-solving logs and engineering notes.
+
+---
+
 ## 🎯 Current Focus
 
 - 🔬 **Multi-Agent Systems** — LangGraph orchestration, agent communication patterns
