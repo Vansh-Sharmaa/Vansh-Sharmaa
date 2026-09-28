@@ -1,0 +1,41 @@
+name: Daily Learning Streak Automation
+
+on:
+  schedule:
+    # Run daily at 9:30 AM IST (4:00 AM UTC)
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+
+jobs:
+  daily-streak:
+    name: Maintain Daily Contribution Streak
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate Daily Journal Entry
+        run: |
+          python scripts/daily_log.py --topic "Automated AI Daily Sync" --summary "Daily continuous integration check, dependency verification, and research updates."
+
+      - name: Commit and push with author identity
+        run: |
+          git config user.name "Vansh Sharma"
+          git config user.email "engagevansh@gmail.com"
+          git add knowledge-hub/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore(streak): daily continuous learning update [$(date +'%Y-%m-%d')]"
+            git push origin main
+          fi
